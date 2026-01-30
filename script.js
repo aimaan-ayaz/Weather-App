@@ -25,7 +25,7 @@ fetch(weather_url)
 }
 
 function getlatlon  (city) {
-let location_url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
+let location_url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
 fetch(location_url)
 .then (res => res.json())
 .then (data => {
