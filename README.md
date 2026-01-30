@@ -1,6 +1,8 @@
 # 🌦️ The Weather App
 **A sleek, mobile-responsive weather dashboard.**
 
+![Project Preview](weather-preview.png)
+
 ## 📌 Overview
 This is a web application built to provide real-time weather updates. As a student developer, I focused on creating a clean UI that works perfectly on both desktop and mobile devices.
 
