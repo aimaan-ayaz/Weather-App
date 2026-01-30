@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Assistant', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+    background-color: rgb(12, 12, 12);
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#h6 {
+display: flex;
+align-items: flex-start;
+font-size: 20px;
+}  
+
+#data {
+    background-color: rgb(28, 28, 28);
+    height: 400px;
+    width: 800px;
+    margin-top: 25px;
+    border-radius: 50px;
+    border: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#temp {
+    font-size: 150px;
+    font-weight:700;
+    transform: translateY(-10%);
+
+}
+
+#weather_location {
+    transform: translateY(-130%);
+    font-weight: 500;
+}
+#search {
+    background-color: rgb(28, 28, 28);
+    margin-top: 20px;
+    height: 50px;
+    width: 260px;
+    border: solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(28, 28, 28);
+    border: none;
+    color: white;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    /* This "inner shadow" covers the white background with your dark gray */
+    -webkit-box-shadow: 0 0 0 30px rgb(28, 28, 28) inset !important;
+    
+    /* This forces the text to stay white */
+    -webkit-text-fill-color: white !important;
+    
+    /* This prevents the transition to the white background */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus {
+    border: none;
+    outline: none; /* Removes the ugly border when you click the box */
+}
+img {
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-items: center;
+}
+#above_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+    width: 80%;
+}
+
+
+/* Mobile Devices (Portrait) */
+@media only screen and (max-width: 800px) {
+    
+    /* Shrink the card width to fit the phone */
+    #data {
+        width: 90%; 
+        height: auto;
+    }
+
+    /* Shrink the massive temperature text */
+    #temp {
+    font-size: clamp(3rem, 10vw, 6rem);
+    white-space: nowrap;
+}
+#above_data {
+    justify-content: center;
+    gap: 16px;
+}
+#temp {
+    transform: translateX(-70%);
+    text-align: center;
+}
+#emoji {
+    transform: translateX(-20%);
+}
+
+    /* Fix the Search Bar */
+    #search {
+        width: 80%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    
+    #above_data {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+}
